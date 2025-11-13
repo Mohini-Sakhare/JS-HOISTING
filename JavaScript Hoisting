@@ -22,5 +22,8 @@ Hence, logging results in undefined.
 Unlike var, let and const are also hoisted, but they remain in a Temporal Dead Zone (TDZ) from the start of the block until their declaration is encountered.
 Accessing them before their declaration will throw a ReferenceError.
 
-console.log(b); // ReferenceError: Cannot access 'b' before initialization
+console.log(b); 
 let b = 10;
+
+output:-
+// ReferenceError: Cannot access 'b' before initialization
