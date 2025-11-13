@@ -40,3 +40,7 @@ During this time, any reference to the variable before its initialization will t
 * Any attempt to access these variables before their declaration will result in an error.
 * The TDZ exists only for variables declared using let and const. Variables declared with var do not have this issue, as they are hoisted and initialized to undefined.
 
+hello();
+var hello = function() {
+    console.log("Hi!");
+};
