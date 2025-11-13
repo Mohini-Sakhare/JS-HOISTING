@@ -27,3 +27,16 @@ let b = 10;
 
 output:-
 // ReferenceError: Cannot access 'b' before initialization
+
+The variable is hoisted, but it’s in the Temporal Dead Zone (TDZ) until the declaration line is executed.
+
+** Temporal Dead Zone (TDZ) :--
+The Temporal Dead Zone (TDZ) is a critical concept in JavaScript hoisting. 
+It refers to the period between the entering of a scope (such as a function or block) and the actual initialization of a variable declared with let or const. 
+During this time, any reference to the variable before its initialization will throw a ReferenceError.
+
+## How does the TDZ Work?
+* Variables declared with let and const are hoisted to the top of their scope, but they are not initialized until their declaration line is reached.
+* Any attempt to access these variables before their declaration will result in an error.
+* The TDZ exists only for variables declared using let and const. Variables declared with var do not have this issue, as they are hoisted and initialized to undefined.
+
