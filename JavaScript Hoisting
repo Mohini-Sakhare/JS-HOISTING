@@ -44,3 +44,9 @@ hello();
 var hello = function() {
     console.log("Hi!");
 };
+
+output:-
+ // TypeError: hello is not a function
+
+The variable hello is hoisted, but it is not initialized until the assignment line is reached since it holds a function expression. 
+Thus, calling hello() before its initialization throws a TypeError.
