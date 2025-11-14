@@ -73,3 +73,7 @@ hello();
 var hello = function() {
     console.log("Hi!");
 };
+
+output:-
+// TypeError: hello is not a function
+The variable hello is hoisted, but since it's a function expression, it’s not initialized until the line is executed.
