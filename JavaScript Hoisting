@@ -63,3 +63,9 @@ function greet() {
 output:-
  // "Hello, Mohini!"
 The function declaration is hoisted, and the entire function definition is available before its position in the code.
+
+4. Function Expression Hoisting
+Function expressions are treated like variable declarations. 
+The variable itself is hoisted, but the function expression is not assigned until the line of execution. 
+This means calling the function before its assignment will result in an error.
+
