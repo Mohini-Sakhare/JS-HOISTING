@@ -50,3 +50,12 @@ output:-
 
 The variable hello is hoisted, but it is not initialized until the assignment line is reached since it holds a function expression. 
 Thus, calling hello() before its initialization throws a TypeError.
+
+3. Function Declaration Hoisting
+Function declarations are hoisted with both their name and the function body.
+This means the function can be called before its definition in the code.
+
+greet();
+function greet() {
+    console.log("Hello, Mohini!");
+}
