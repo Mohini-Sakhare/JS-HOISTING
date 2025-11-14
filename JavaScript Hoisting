@@ -59,3 +59,6 @@ greet();
 function greet() {
     console.log("Hello, Mohini!");
 }
+
+output:-
+ // "Hello, Mohini!"
