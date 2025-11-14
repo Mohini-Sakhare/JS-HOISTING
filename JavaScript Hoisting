@@ -69,3 +69,7 @@ Function expressions are treated like variable declarations.
 The variable itself is hoisted, but the function expression is not assigned until the line of execution. 
 This means calling the function before its assignment will result in an error.
 
+hello(); 
+var hello = function() {
+    console.log("Hi!");
+};
