@@ -62,3 +62,4 @@ function greet() {
 
 output:-
  // "Hello, Mohini!"
+The function declaration is hoisted, and the entire function definition is available before its position in the code.
