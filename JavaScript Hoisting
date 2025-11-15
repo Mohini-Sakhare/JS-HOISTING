@@ -90,3 +90,8 @@ test();
 
 output:-
 // ReferenceError: Cannot access 'x' before initialization
+
+The variable x is hoisted inside the function but cannot be accessed until its declaration line due to the TDZ.
+
+6. Hoisting with Classes
+Classes are hoisted, but they cannot be accessed before they are declared, resulting in a ReferenceError.
