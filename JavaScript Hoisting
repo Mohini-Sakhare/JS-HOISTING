@@ -102,3 +102,8 @@ class MyClass {
         this.name = "Mohini Sakhare";
     }
 }
+
+output:-
+ReferenceError
+
+Although the class MyClass is hoisted, it cannot be accessed before its declaration due to the TDZ, which is why the code throws a ReferenceError.
