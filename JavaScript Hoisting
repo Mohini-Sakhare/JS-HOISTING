@@ -87,3 +87,6 @@ function test() {
     let x = 50;
 }
 test();
+
+output:-
+// ReferenceError: Cannot access 'x' before initialization
