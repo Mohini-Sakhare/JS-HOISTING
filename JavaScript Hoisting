@@ -77,3 +77,13 @@ var hello = function() {
 output:-
 // TypeError: hello is not a function
 The variable hello is hoisted, but since it's a function expression, it’s not initialized until the line is executed.
+
+5. Hoisting with let and const in Functions
+Variables declared with let and const inside a function are hoisted to the top of the function's scope, but they remain in the TDZ. 
+This prevents access to them before they are initialized.
+
+function test() {
+    console.log(x); 
+    let x = 50;
+}
+test();
