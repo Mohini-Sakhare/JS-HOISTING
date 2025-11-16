@@ -117,3 +117,4 @@ var a = 20; // No error
 console.log(a); 
 
 output:-
+20
