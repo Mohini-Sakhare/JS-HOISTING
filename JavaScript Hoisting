@@ -115,3 +115,5 @@ This is a unique behavior compared to let and const.
 var a = 10;
 var a = 20; // No error
 console.log(a); 
+
+output:-
