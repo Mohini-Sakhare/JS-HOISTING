@@ -119,3 +119,12 @@ console.log(a);
 output:-
 20
 With var, the second declaration overwrites the first one without throwing an error.
+
+8. Accessing Variables Declared Later in Loops
+When using var in loops, the loop variable is hoisted to the function or global scope, which can cause unexpected behavior. 
+If you use let, the variable is block-scoped and behaves as expected.
+for (var i = 0; i < 3; i++) {
+    setTimeout(function() {
+        console.log(i); // 3, 3, 3
+    }, 100);
+}
