@@ -133,3 +133,10 @@ output:-
 3 3 3
 
 The var i is hoisted, and all setTimeout functions share the same i reference, which results in the value 3 after the loop finishes.
+
+9. Using Hoisted Functions with Parameters
+Functions can be hoisted with their parameters, but any parameters passed to the function are still determined by the invocation, not by the hoisting.
+test(10); // 10
+function test(num) {
+    console.log(num);
+}
