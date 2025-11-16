@@ -128,3 +128,8 @@ for (var i = 0; i < 3; i++) {
         console.log(i); // 3, 3, 3
     }, 100);
 }
+
+output:-
+3 3 3
+
+The var i is hoisted, and all setTimeout functions share the same i reference, which results in the value 3 after the loop finishes.
