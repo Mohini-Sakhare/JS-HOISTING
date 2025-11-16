@@ -107,3 +107,11 @@ output:-
 ReferenceError
 
 Although the class MyClass is hoisted, it cannot be accessed before its declaration due to the TDZ, which is why the code throws a ReferenceError.
+
+7. Re-declaring Variables with var
+With var, you can redeclare a variable within the same scope. 
+This is a unique behavior compared to let and const.
+
+var a = 10;
+var a = 20; // No error
+console.log(a); 
