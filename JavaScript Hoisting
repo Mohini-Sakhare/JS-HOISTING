@@ -140,3 +140,9 @@ test(10); // 10
 function test(num) {
     console.log(num);
 }
+
+output:-
+10
+
+The entire function, including its parameters, is hoisted and available for use before the function's declaration in the code.
+
