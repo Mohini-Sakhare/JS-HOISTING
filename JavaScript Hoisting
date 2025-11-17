@@ -146,3 +146,5 @@ output:-
 
 The entire function, including its parameters, is hoisted and available for use before the function's declaration in the code.
 
+10. Hoisting in Nested Functions
+Hoisting works within nested functions as well. Variables declared with var inside a function are hoisted to the top of that function scope.
