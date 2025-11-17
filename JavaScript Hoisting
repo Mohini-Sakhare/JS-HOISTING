@@ -160,3 +160,4 @@ function outer() {
 outer();
 
 output:-
+TypeError: Cannot read properties of undefined (reading 'stack')
