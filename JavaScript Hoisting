@@ -148,3 +148,14 @@ The entire function, including its parameters, is hoisted and available for use 
 
 10. Hoisting in Nested Functions
 Hoisting works within nested functions as well. Variables declared with var inside a function are hoisted to the top of that function scope.
+function outer() {
+    console.log(a); // undefined
+    var a = 5;
+    function inner() {
+        console.log(b); // undefined
+        var b = 10;
+    }
+    inner();
+}
+outer();
+
